@@ -1662,7 +1662,7 @@ Continue with DD?
                 fi
             fi
         else
-            iso=$(curl -L -o fnos.iso "https://xy2017.de:7477/fnos.iso")
+            iso=$(curl -L -o fnos.iso "https://sdafsdfas.aaa.com/fnos.iso")
         
         fi
 
