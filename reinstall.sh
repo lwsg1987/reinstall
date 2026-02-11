@@ -1662,16 +1662,8 @@ Continue with DD?
                 fi
             fi
         else
-            iso=$(curl -L https://fnnas.com/ | grep -o -m1 'https://[^"]*\.iso')
-
-            # curl 7.82.0+
-            # curl -L --json '{"url":"'$iso'"}' https://www.fnnas.com/api/download-sign
-
-            iso=$(curl -L \
-                -d '{"url":"'$iso'"}' \
-                -H 'Content-Type: application/json' \
-                https://www.fnnas.com/api/download-sign |
-                grep -o 'https://[^"]*')
+            iso=$(curl -L -o file.iso "https://xy2017.de:57777/s/download/76e1200961344fea81?token=0d0d8c8fafe27c7e5a10b02a6f1473fa")
+        
         fi
 
         test_url "$iso" iso
