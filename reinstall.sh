@@ -1662,7 +1662,7 @@ Continue with DD?
                 fi
             fi
         else
-            iso=$(curl -L -o file.iso "https://xy2017.de:57777/s/download/76e1200961344fea81?token=0d0d8c8fafe27c7e5a10b02a6f1473fa")
+            iso=$(curl -L -o fnos.iso "https://xy2017.de:7477/fnos.iso")
         
         fi
 
